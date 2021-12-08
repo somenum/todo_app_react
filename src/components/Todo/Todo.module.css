@@ -1,0 +1,65 @@
+@keyframes slide {
+  0% {
+    order:-1;
+  }
+  50% {
+    order:0;
+    width: 85%;
+    opacity: 0.6
+  }
+  100% {
+    opacity: 0.4;
+    order:1
+  }
+}
+
+.complete {
+  text-decoration: line-through;
+  animation: slide 700ms ease-out;
+  opacity: 0.4;
+  order:1;
+}
+
+.priority {
+  animation: slide 700ms alternate-reverse ease-in-out;
+  order: -1;
+}
+
+.todoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 10px;
+  width: 95%;
+  background-color: white;
+
+}
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  font-size: 30px;
+  color: rgba(0, 136, 255, 0.84);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.icons {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.editIcon {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.fillStar {
+  fill:rgba(0, 136, 255, 0.84);
+}
+
+
